@@ -1,0 +1,22 @@
+<nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Practice 8</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isAboutMe}}
+        <li class="active"><a href="/">About me</a></li>
+        {{else}}
+        <li><a href="/">About me</a></li>
+        {{/if}}
+        {{#if isCountWords}}
+        <li class="active"><a href="/countwords">Word count</a></li>
+        {{else}}
+        <li><a href="/countwords">Word count</a></li>
+        {{/if}}
+        {{#if isTodos}}
+        <li class="active"><a href="/todos">Todos</a></li>
+        {{else}}
+        <li><a href="/todos">Todos</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>

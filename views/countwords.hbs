@@ -1,0 +1,17 @@
+<form action="/countWords" method="POST">
+<h4>enter words, separate them with coma</h4>
+
+<div class="input field">
+    <label> Words </label>
+    <input type="text" name="words">
+    
+</div>
+
+<button type="submit" class="btn">Create</button>
+
+</form>
+    {{#if countedWords.length}}
+    <h4>
+        {{countedWords}}
+    </h4>
+    {{/if}}
